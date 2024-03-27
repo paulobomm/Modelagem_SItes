@@ -3,38 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formulário de Cadastro</title>
 </head>
 <body>
-    <table border="2" width="50%">
-        <tr>
-            <th></th>
-            <th></th>
+    <h2>Cadastro</h2>
 
-
-
-
-
-
-
-        </tr>
-
-
+    <form action="/submit_form.php" method="post">
         
+        <label for="nome">Nome Completo:</label><br>
+        <input type="text" id="nome" name="nome" required><br><br>
 
+        <label for="data_nascimento">Data de Nascimento:</label><br>
+        <input type="date" id="data_nascimento" name="data_nascimento" required><br><br>
 
+        <label>Gênero:</label><br>
+        <input type="radio" id="genero_masculino" name="genero" value="Masculino">
+        <label for="genero_masculino">Masculino</label>
+        <input type="radio" id="genero_feminino" name="genero" value="Feminino">
+        <label for="genero_feminino">Feminino</label><br><br>
 
+        <label for="foto_perfil">Foto de Perfil:</label><br>
+        <input type="file" id="foto_perfil" name="foto_perfil"><br><br>
 
+        <label for="email">Endereço de E-mail:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
 
-    </table>
+        <label for="telefone">Número de Telefone:</label><br>
+        <input type="tel" id="telefone" name="telefone"><br><br>
 
+        <label for="endereco">Endereço:</label><br>
+        <textarea id="endereco" name="endereco"></textarea><br><br>
+       
+        <label for="usuario">Nome de Usuário:</label><br>
+        <input type="text" id="usuario" name="usuario" required><br><br>
 
+        <label for="senha">Senha:</label><br>
+        <input type="password" id="senha" name="senha" required><br><br>
 
+        <label for="confirmar_senha">Confirmar Senha:</label><br>
+        <input type="password" id="confirmar_senha" name="confirmar_senha" required><br><br>
 
-
-
-
-
+        <label>Preferências de Comunicação:</label><br>
+        <input type="checkbox" id="preferencias" name="preferencias">
+        <label for="preferencias">Desejo receber novidades por e-mail</label><br><br>
+            
+        <input type="checkbox" id="termos" name="termos" required>
+        <label for="termos">Eu li e concordo com os <a href="/termos_e_condicoes">termos e condições</a></label><br><br>
+        
+        <input type="submit" value="Cadastrar">
+        <input type="reset" value="Limpar">
+    
+    </form>
 
 </body>
+
 </html>

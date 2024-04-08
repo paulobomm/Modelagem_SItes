@@ -70,54 +70,55 @@
         </tr>
         <tr>
             <td align=left colspan="2">
+
                 <h1>Cadastro</h1>
+                
                 <form action="/submit_form.php" method="post">
-                                    
-                    <label for="nome">Nome Completo:</label><br>
-                    <input type="text" id="nome" name="nome" placeholder="Ex: João da Silva" required><br><br>
 
-                    <label for="endereco">Endereço:</label><br>
-                    <textarea id="endereco" name="endereco" placeholder="Ex: Rua Exemplo, 123 - Bairro Exemplo"></textarea><br><br>
+                    <fieldset>
+                        <legend>Dados Pessoais</legend>
+                        <label for="nome">Nome Completo:</label><br>
+                        <input type="text" id="nome" name="nome" placeholder="Ex: João da Silva" required><br><br>
                 
-                    <label for="data_nascimento">Data de Nascimento:</label><br>
-                    <input type="date" id="data_nascimento" name="data_nascimento" placeholder="Ex: 01/01/1990" required><br><br>
+                        <label for="endereco">Endereço:</label><br>
+                        <textarea id="endereco" name="endereco" placeholder="Ex: Rua Exemplo, 123 - Bairro Exemplo"></textarea><br><br>
                 
-                    <label>Gênero:</label><br>
-                    <input type="radio" id="genero_masculino" name="genero" value="Masculino">
-                    <label for="genero_masculino">Masculino</label>
-                    <input type="radio" id="genero_feminino" name="genero" value="Feminino" checked>
-                    <label for="genero_feminino">Feminino</label><br><br>
+                        <label for="data_nascimento">Data de Nascimento:</label><br>
+                        <input type="date" id="data_nascimento" name="data_nascimento" placeholder="Ex: 01/01/1990" required><br><br>
+                
+                        <label>Gênero:</label><br>
+                        <input type="radio" id="genero_masculino" name="genero" value="Masculino">
+                        <label for="genero_masculino">Masculino</label>
+                        <input type="radio" id="genero_feminino" name="genero" value="Feminino" checked>
+                        <label for="genero_feminino">Feminino</label><br><br>
+                    </fieldset>
+                
+                    <fieldset>
+                        <legend>Contato</legend>
+                        <label for="email">Endereço de E-mail:</label><br>
+                        <input type="email" id="email" name="email" placeholder="Ex: exemplo@dominio.com" required><br><br>
+                
+                        <label for="telefone">Número de Telefone:</label><br>
+                        <input type="tel" id="telefone" name="telefone" placeholder="Ex: (XX) XXXX-XXXX"><br><br>
+                    </fieldset>
+                
+                    <fieldset>
+                        <legend>Interesse</legend>
+                        <label for="cargo">Cargo Pretendido:</label><br>
+                        <input type="text" id="cargo" name="cargo" placeholder="Cargo desejado" required><br><br>
+                
+                        <label for="mensagem">Mensagem:</label><br>
+                        <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem"></textarea><br><br>
+                
+                        <label for="curriculo">Currículo:</label><br>
+                        <input type="file" id="curriculo" name="curriculo" accept=".pdf,.doc,.docx"><br><br>
+                    </fieldset>
 
-                    <label for="email">Endereço de E-mail:</label><br>
-                    <input type="email" id="email" name="email" placeholder="Ex: exemplo@dominio.com" required><br><br>
-                    
-                    <label for="telefone">Número de Telefone:</label><br>
-                    <input type="tel" id="telefone" name="telefone" placeholder="Ex: (XX) XXXX-XXXX"><br><br>       
-                    
-                    <label for="cargo">Cargo Pretendido:</label><br>
-                    <input type="text" id="cargo" name="cargo" placeholder="Cargo desejado" required><br><br>
-                    
-                    <label for="mensagem">Mensagem:</label><br>
-                    <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem"></textarea><br><br>
-                    
-                    <label for="curriculo">Currículo:</label><br>
-                    <input type="file" id="curriculo" name="curriculo" accept=".pdf,.doc,.docx"><br><br>
-
-                
-                    <label for="foto_perfil">Foto de Perfil:</label><br>
-                    <input type="file" id="foto_perfil" name="foto_perfil"><br><br>
-                
-                    <label>Preferências de Comunicação:</label><br>
-                    <input type="checkbox" id="preferencias" name="preferencias" checked>
-                    <label for="preferencias">Desejo receber novidades por e-mail</label><br><br>
-                
-                    <input type="checkbox" id="termos" name="termos" required>
-                    <label for="termos">Eu li e concordo com os <a href="/termos_e_condicoes">termos e condições</a></label><br><br>
-                
-                    <input type="submit" value="Cadastrar">
-                    <input type="reset" value="Limpar">
-                
-                
+                    <fieldset>
+                        <legend>Finalizar seu cadastro</legend>
+                        <input type="submit" value="Cadastrar">
+                        <input type="reset" value="Limpar">
+                    </fieldset>                
                 </form>
                 
 
